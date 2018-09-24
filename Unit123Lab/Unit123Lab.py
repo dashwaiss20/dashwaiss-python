@@ -1,8 +1,7 @@
 def main():
     print('Bellarmine point grade average')
     gradeLevel = input('what grade are you in? ')
-    return (yearInSchool(LongGrade))
-    print(longGrade)
+    print ("You are in " + str(yearInSchol(gradeLevel)))
 
 
 
@@ -22,6 +21,10 @@ def yearInSchool(gradeLevel):
     else:
         longGrade = ('no grade')
     return (longGrade)
+
+
+
+
 main()
 
 
