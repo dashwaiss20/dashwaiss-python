@@ -1,30 +1,47 @@
 def main():
+    l = [0, 69.3, 56.3, 23.4]
+    length = len(l)
     print('Bellarmine point grade average')
-    gradeLevel = input('what grade are you in? ')
-    print ("You are in " + str(yearInSchol(gradeLevel)))
-
-
-
-
-
-
-
-def yearInSchool(gradeLevel):
-    if gradeLevel == 9:
-        longGrade = ('Freshman')
-    elif gradeLevel == 10:
-        longGrade = ('Sophmore')
-    elif gradeLevel == 11:
-        longGrade = ('Junior')
-    elif gradeLevel == 12:
-        longGrade = ('Senior')
+    gradelevel = input('what grade are you in? ')
+    print('congrats you are ' + str(yearInSchool(gradelevel)))
+    calcGPA = getGPA(l,length)
+    grade = getlettergrade(calcGPA)
+    print('you GPA is ' + str(calcGPA))
+    print('your current letter grade is ' + str(grade))
+    if grade == ('D') or grade == ('F'):
+        print('you failed')
     else:
-        longGrade = ('no grade')
+        print('you passed')
+
+
+def yearInSchool(gradelevel):
+    if gradelevel == 9:
+        longGrade = ('a Freshman')
+    elif gradelevel == 10:
+        longGrade = ('a Sophmore')
+    elif gradelevel == 11:
+        longGrade = ('a Junior')
+    elif gradelevel == 12:
+        longGrade = ('a Senior')
+    else:
+        longGrade = ('not in Highschool')
     return (longGrade)
 
+def getGPA(myL,MyLength):
+    gpa = sum(myL) / float(MyLength)
+    return(gpa)
 
-
+def getlettergrade(getGPA):
+    if getGPA >= 90:
+        lettergrade = ('A')
+    elif getGPA >= 80:
+        lettergrade = ('B')
+    elif getGPA >= 70:
+        lettergrade = ('C')
+    elif getGPA >= 60:
+        lettergrade = ('D')
+    else:
+        lettergrade = ('F')
+    return (lettergrade)
 
 main()
-
-
