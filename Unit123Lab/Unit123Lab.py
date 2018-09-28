@@ -1,4 +1,5 @@
 def main():
+<<<<<<< HEAD
     l = [0, 69.3, 56.3, 23.4]
     length = len(l)
     print('Bellarmine point grade average')
@@ -35,13 +36,13 @@ def getlettergrade(getGPA):
     if getGPA >= 90:
         lettergrade = ('A')
     elif getGPA >= 80:
-        lettergrade = ('B')
+        lettergrade = ("B")
     elif getGPA >= 70:
-        lettergrade = ('C')
+        lettergrade = ("C")
     elif getGPA >= 60:
-        lettergrade = ('D')
+        lettergrade = ("D")
     else:
-        lettergrade = ('F')
+        lettergrade = ("F")
     return (lettergrade)
 
 main()
