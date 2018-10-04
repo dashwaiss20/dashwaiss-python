@@ -1,5 +1,4 @@
 def main():
-<<<<<<< HEAD
     l = [0, 69.3, 56.3, 23.4]
     length = len(l)
     print('Bellarmine point grade average')
@@ -29,7 +28,11 @@ def yearInSchool(gradelevel):
     return (longGrade)
 
 def getGPA(myL,MyLength):
-    gpa = sum(myL) / float(MyLength)
+#    gpa = sum(myL) / float(MyLength)
+    gpa = float("0")
+    for x in myL:
+        gpa = float(gpa + (x))
+    gpa = ((gpa) / len(myL))
     return(gpa)
 
 def getlettergrade(getGPA):
