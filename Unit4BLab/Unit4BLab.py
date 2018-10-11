@@ -2,13 +2,15 @@ for i in range(1,6):
     print(i)
     answer = (i + 10)
     skrt = (i * 10)
-    print(str(i) + (' + 10 = ') + str(answer))
-    print(str(i) + (' * 10 = ') + str(skrt))
-    print('pause')
+    print(str(i) + (' + 10 = ' + str(answer)))
+    print(str(i) + (' * 10 = ' + str(skrt)))
 
-list = [10,20,30,40,50]
-print(list)
+print(' ')
+myList = [10, 20, 30, 40, 50]
+print(myList)
 
-for x in range(0, list):
-
+for a in range(0, len(myList)):
+    list = []
+    myList[a] = myList[a] * 10
+    print(myList)
 
