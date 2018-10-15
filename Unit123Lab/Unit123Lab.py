@@ -29,10 +29,16 @@ def yearInSchool(gradelevel):
 
 def getGPA(myL,MyLength):
 #    gpa = sum(myL) / float(MyLength)
-    gpa = float("0")
+    #gpa = float("0")
+    added2 = "0"
+    added = float(added2)
+
     for x in myL:
-        gpa = float(gpa + (x))
-    gpa = ((gpa) / len(myL))
+        added = float(added) + x
+    gpa = added / MyLength
+
+#gpa = float(gpa + (x))
+#gpa = ((gpa) / len(myL))
     return(gpa)
 
 def getlettergrade(getGPA):
