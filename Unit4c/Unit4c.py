@@ -8,7 +8,7 @@ draw7()
 def starsandstripes():
     for t in range(0,6):
         for f in range(0,6):
-            print("-", end=)
+            print("-", end=" ")
         print()
 
 starsandstripes()
