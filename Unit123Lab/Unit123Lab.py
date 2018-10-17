@@ -1,10 +1,13 @@
 def main():
-    l = [0, 69.3, 56.3, 23.4]
+    num = int(input('how many? '))
+    l = [0] * num
+    for s in range(0, num):
+        l = input('grade')
     length = len(l)
     print('Bellarmine point grade average')
     gradelevel = input('what grade are you in? ')
     print('congrats you are ' + str(yearInSchool(gradelevel)))
-    calcGPA = getGPA(l,length)
+    calcGPA = getGPA(l, length)
     grade = getlettergrade(calcGPA)
     print('you GPA is ' + str(calcGPA))
     print('your current letter grade is ' + str(grade))
@@ -27,19 +30,17 @@ def yearInSchool(gradelevel):
         longGrade = ('not in Highschool')
     return (longGrade)
 
-def getGPA(myL,MyLength):
+def getGPA(myL,length):
 #    gpa = sum(myL) / float(MyLength)
     #gpa = float("0")
-    added2 = "0"
-    added = float(added2)
-
+    added = 0.0
     for x in myL:
-        added = float(added) + x
-    gpa = added / MyLength
+        added += float(x)
+    gpa = (added) / int(length)
+    return (gpa)
 
 #gpa = float(gpa + (x))
 #gpa = ((gpa) / len(myL))
-    return(gpa)
 
 def getlettergrade(getGPA):
     if getGPA >= 90:
