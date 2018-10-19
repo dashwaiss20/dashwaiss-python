@@ -1,14 +1,30 @@
+def main():
+    draw7()
+    print('stars')
+    starsandStripes()
+    print('pause')
+    incTriangle()
 def draw7():
-    for x in range(0,7):
-        for s in range(0,7):
-            print('*', end=" ")
-        print()
-draw7()
+    string = ''
+    for i in range(0,7):
+        string = ''
+        for i in range(0,7):
+            string += "*"
+        print (string)
 
-def starsandstripes():
-    for t in range(0,6):
-        for f in range(0,6):
-            print("-", end=" ")
+def starsandStripes():
+    for i in range(0,3):
+        for a in range(0,7):
+            print("*", end = '')
+        print("")
+        for x in range(0,7):
+            print("-", end = '')
+        print('')
+
+def incTriangle():
+    for i in range(1,8):
+        for j in range(0,i):
+            print(i, end = '')
         print()
 
-starsandstripes()
+main()
