@@ -1,61 +1,70 @@
 from random import *
-
-def dice():
-    loop = "y"
-    blank = '|       |'
-    onedot ='|   *   |'
-    twodot ='|  * *  |'
-    topBot = "---------"
-    Dice1 = [topBot, blank, onedot, blank, topBot]
-    Dice2 = [topBot, blank, twodot, blank, topBot]
-    Dice3 = [topBot, onedot, onedot, onedot, topBot]
-    Dice4 = [topBot, twodot, blank, twodot, topBot]
-    Dice5 = [topBot, twodot, onedot, twodot, topBot]
-    Dice6 = [topBot, twodot, twodot, twodot, topBot]
-    yoinks = [Dice1,Dice2,Dice3,Dice4,Dice5,Dice6]
-
+def dice () :
+    loop = 'y'
     times = 0
-    while loop== "y":
+    while loop=='y' :
         times = times + 1
-        y = randnum()
-        print(whichDice(randnum, yoinks, dicea))
-        print ('you rolled a ' + str(y))
-        loop = input('would you like to play again (y/n)')
-        print('you have played ' + str(times) + " times")
-
-def randnum():
-    x = randint(1,6)
-    return(x)
-
-def whichDice(randnum, yoinks):
-    if randnum == 1:
-        dicea = yoinks[0]
-    if randnum == 2:
-        dicea = yoinks[1]
-    if randnum == 3:
-        dicea = yoinks[2]
-    if randnum == 4:
-        dicea = yoinks[3]
-    if randnum == 5:
-        dicea = yoinks[4]
-    if randnum == 6:
-        dicea = yoinks[5]
-
-    return(dicea)
-dice()
+        y = randNum ()
+        x = randNum ()
+        print(whichDice(y , x))
+        print ("You rolled a - " + str(y) + " and " + str(x) + ".")
+        print ("You have played " + str(times) + " times.")
+        loop = input ("Would you like this to run again? (y/n) - ")
+def randNum () :
+    z = randint(1,6)
+    return (z)
 
 
+def whichDice (x , y) :
+    a = ' -------   ------- '
+    if x==1 or x==2 :
+        ba = '|       |'
+    elif x==3 :
+        ba = '|   *   |'
+    elif x==4 or x==5 or x==6 :
+        ba = '| *  *  |'
 
+    if x==1 or x==3 or x==5 :
+        ca = '|   *   |'
+    elif x==4 :
+        ca = '|       |'
+    elif x==2 or x==6 :
+        ca = '| *  *  |'
 
+    if x==1 or x==2 :
+        da = '|       |'
+    elif x==3 :
+        da = '|   *   |'
+    elif x==4 or x==5 or x==6 :
+        da = '| *  *  |'
 
+    if y==1 or y==2 :
+        bb = ' |       |'
+    elif y==3 :
+        bb = ' |   *   |'
+    elif y==4 or y==5 or y==6 :
+        bb = ' | *  *  |'
 
+    if y==1 or y==3 or y==5 :
+        cb = ' |   *   |'
+    elif y==4 :
+        cb = ' |       |'
+    elif y==2 or y==6 :
+        cb = ' | *  *  |'
 
+    if y==1 or y==2 :
+        db = ' |       |'
+    elif y==3 :
+        db = ' |   *   |'
+    elif y==4 or y==5 or y==6 :
+        db = ' | *  *  |'
 
+    b = ba + bb
+    c = ca + cb
+    d = da + db
+    return(a + "\n" + b + "\n" + c + "\n" + d + "\n" + a)
 
-
-
-
-
+dice ()
 
 
     # if randnum2 == 1 or randnum == 2:
