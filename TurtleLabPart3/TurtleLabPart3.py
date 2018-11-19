@@ -1,0 +1,66 @@
+import turtle
+turtle.title('YEET')
+pen = turtle.Pen()
+black_color = (0.0, 0.0, 0.0)
+white_color = (1.0, 1.0, 1.0)
+red_color = (1.0, 0.0, 0.0)
+green_color = (0.0, 1.0, 0.0)
+blue_color = (0.0, 0.0, 1.0)
+hex_color = "#ffe063"
+turtle.bgcolor(black_color)
+
+
+pen.goto(200,-200)
+pen.color(hex_color)
+pen.down()
+pen.forward(150)
+pen.left(90)
+pen.forward(150)
+pen.left(90)
+pen.forward(150)
+pen.left(90)
+pen.forward(150)
+
+pen.up()
+pen.goto(200,200)
+pen.down()
+pen.color(white_color)
+pen.circle(100)
+pen.up()
+
+pen.color(green_color)
+pen.goto(-300,-200)
+pen.down()
+pen.right(270)
+pen.forward(200)
+pen.left(120)
+pen.forward(200)
+pen.left(120)
+pen.forward(200)
+pen.up()
+
+pen.color(red_color)
+pen.goto(-300,250)
+pen.down()
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+pen.forward(80)
+pen.left(45)
+
+
+turtle.exitonclick()
+
+
+
