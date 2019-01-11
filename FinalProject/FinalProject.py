@@ -7,8 +7,26 @@ def starting_Character():
 starting_Character()
 
 def Starting_Game():
-    jkjk = input('yeet?')
-    Inventory  =  ['yeet', (jkjk)]
+
+    print('[meat], [gun], [axle], [wheel]')
+    jkjk = input('what would you like to buy?')
+    print(jkjk)
+    if jkjk == ('wheel'):
+        amountW = input('how many would you like to buy?')
+        if amountW == ('1'):
+            print("1 wheel")
+        if amountW == ('2'):
+            print("2 wheels")
+        if amountW == ('3'):
+            print("3 wheels")
+        if amountW == ('4'):
+            print("4 wheels")
+        if amountW == ("5"):
+            print('5 wheels')
+        else:
+            print('oofofofo')
+
+    Inventory  =  ['yeet', ('s')]
     print(Inventory)
 
 Starting_Game()
