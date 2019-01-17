@@ -1,55 +1,31 @@
 import random
 
 def starting_Character():
+    print('-----------------------------------')
+    print('Hello! Welcome To The Oregon Trail.')
+    print('-----------------------------------')
     Name = input('What would you like your name to be? ')
     print('Hello ' + (Name))
 
 starting_Character()
 
-def Starting_Game():
 
-    print('[meat], [gun], [axle], [wheel]')
-    jkjk = input('what would you like to buy?')
-    print(jkjk)
-    if jkjk == ('wheel'):
-        amountW = input('how many would you like to buy? [1-5]')
-        if amountW == ('1'):
-            print("1 wheel")
-            list.append('1 wheel')
-        if amountW == ('2'):
-            print("2 wheels")
-            s = ('2 wheel')
-        if amountW == ('3'):
-            print("3 wheels")
-            s = ('3 wheel')
-        if amountW == ('4'):
-            print("4 wheels")
-            s = ('4 wheel')
-        if amountW == ("5"):
-            print('5 wheels')
-            s = ('5 wheel')
-        else:
-            print('hello')
+river = input('you reach a river do you try to cross it? [y/n] ')
 
-    if jkjk == ('axel'):
-        amountA = input('how many would you lik   e to buy? [1-5]')
-        if amountA == ('1'):
-            print("1 wheel")
-            s = ('1 wheel')
-        if amountA == ('2'):
-            print("2 wheels")
-            s = ('2 wheel')
-        if amountA == ('3'):
-            print("3 wheels")
-            s = ('3 wheel')
-        if amountA == ('4'):
-            print("4 wheels")
-            s = ('4 wheel')
-        if amountA == ("5"):
-            print('5 wheels')
-            s = ('5 wheel')
 
-    list =  ['yeet']
-    print(list)
+yeet = random.randint(1,101)
 
-Starting_Game()
+if river == ('y') or ('yes'):
+    if yeet >= (80):
+        print('you died')
+#    if yeet <= (79):
+#       print('you survived')
+if river == ('no') or ('n'):
+    print(river)
+    input('pause')
+    no_river = random.randint(1,11)
+    if no_river >= (9):
+        print('you start to starve.')
+    elif no_river <= (8):
+        print('you are ')
+
